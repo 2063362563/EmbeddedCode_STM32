@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include
+-I.\RTE\_03_led_flow_hal
+-I"C:\Embedded System\keil\pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include"
+-I"C:\Embedded System\keil\pack\Keil\STM32F1xx_DFP\2.4.1\Device\Include"
+-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE
+-o 03_led_flow_hal\gpio.o --omf_browse 03_led_flow_hal\gpio.crf --depend 03_led_flow_hal\gpio.d "../Core/Src/gpio.c"
